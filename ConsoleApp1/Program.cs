@@ -23,6 +23,7 @@ namespace ConsoleApp1
                 Console.WriteLine(array[i] *= 10);
             }
         }
+
         public static int GetNumber()
         {
             int number = int.Parse(Console.ReadLine());
