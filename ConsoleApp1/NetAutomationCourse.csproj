@@ -56,8 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HometaskOneOptional.cs" />
-    <Compile Include="PageObject.cs" />
+    <Compile Include="HometaskOneOptional\HometaskOneOptional.cs" />
+    <Compile Include="HometaskOneOptional\PageObject\StartPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

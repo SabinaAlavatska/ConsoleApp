@@ -1,8 +1,6 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -23,10 +21,9 @@ namespace ConsoleApp1
         [Test]
         public void GoToUrl ()
         {
-            PageObject pageObject = new PageObject(chromeDriver);
+            StartPage pageObject = new StartPage(chromeDriver);
             string expectedText = pageObject.firstArticleHeader.Text;
             pageObject.firstArticleLink.Click();
-
             string actualText = pageObject.clickedArticleHeader.Text;
             bool isContainsString = actualText.Contains(expectedText);
             Assert.IsTrue(isContainsString, "Selected article name does not match with opened article page title");

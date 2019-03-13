@@ -1,18 +1,12 @@
 ﻿using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Support;
 using SeleniumExtras.PageObjects;
 using OpenQA.Selenium;
 
 namespace ConsoleApp1
 {
-    class PageObject
+    class StartPage
     {
-        public PageObject (ChromeDriver chromeDriver)
+        public StartPage (ChromeDriver chromeDriver)
         {
             PageFactory.InitElements(chromeDriver, this);
         }
