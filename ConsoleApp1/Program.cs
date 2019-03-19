@@ -1,33 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Please enter 5 numbers");
-            int[] array = new int[5];
+        bool number;
 
-           for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = GetNumber();
-            }
-            
-           for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i] *= 10);
-            }
-        }
+        public static void Main(string[] args)
+        { }
 
-        public static int GetNumber()
+            public void GetArray ()
+            {
+            do
+            {
+                Console.WriteLine("Please enter 5 numbers");
+                int[] array = new int[5];
+
+                for (int i = 0; i < array.Length; i++)
+                {
+
+                    array[i] = GetUserInput();
+                }
+
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(array[i] *= 10);
+                }
+            }
+            while (false);
+            Console.WriteLine("");
+            }
+        
+
+        public int GetUserInput()
         {
-            int number = int.Parse(Console.ReadLine());
-            return number;
+            int result = 0;
+            while (!int.TryParse(Console.ReadLine(), out result))
+            {
+                Console.WriteLine("Wrong input");
+            }
+            return result;
         }
     }
 }
