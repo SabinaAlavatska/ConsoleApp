@@ -9,7 +9,7 @@ namespace ConsoleApp1
     class Program
     {
         const int ArrayLenght = 5;
-        static void Main(string[] args)
+        public int[] FillArray()
         {
             Console.WriteLine("Please enter 5 numbers");
             int[] array = new int[ArrayLenght];
