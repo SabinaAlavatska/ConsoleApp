@@ -43,15 +43,15 @@ namespace ConsoleApp1
 
         public static void Main(string [] args)
         {
-            //Program program = new Program();
-           // program.FillArray();
+            Program program = new Program();
+            program.FillArray();
 
            // GuessNumberGame guessNumberGame = new GuessNumberGame();
            // guessNumberGame.GuessNumber();
 
-            HometaskThreeGenerics hometaskThree = new HometaskThreeGenerics();
-            hometaskThree.GetInputList();
-            hometaskThree.DisplayInput();
+           // HometaskThreeGenerics hometaskThree = new HometaskThreeGenerics();
+           // hometaskThree.GetInputList();
+          //  hometaskThree.DisplayInput();
         }
     }
 }

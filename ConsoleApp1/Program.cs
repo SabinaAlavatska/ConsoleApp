@@ -8,10 +8,12 @@ namespace ConsoleApp1
 {
     class Program
     {
+        const int arrayLenghtInt = 5;
+
         public int [] FillArray ()
         {
             Console.WriteLine("Please enter 5 numbers");
-            int[] array = new int[5];
+            int[] array = new int[arrayLenghtInt];
 
            for (int i = 0; i < array.Length; i++)
             {
@@ -22,6 +24,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(array[i] *= 10);
             }
+            Console.ReadLine();
             return array;
         }
 
