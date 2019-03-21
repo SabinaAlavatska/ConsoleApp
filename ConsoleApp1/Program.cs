@@ -8,14 +8,15 @@ namespace ConsoleApp1
 {
     class Program
     {
+        const int ArrayLenght = 5;
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter 5 numbers");
-            int[] array = new int[5];
+            int[] array = new int[ArrayLenght];
 
            for (int i = 0; i < array.Length; i++)
             {
-                array[i] = GetNumber();
+                array[i] = GetUserNumber();
             }
             
            for (int i = 0; i < array.Length; i++)
@@ -24,10 +25,14 @@ namespace ConsoleApp1
             }
         }
 
-        public static int GetNumber()
+        public int GetUserNumber()
         {
-            int number = int.Parse(Console.ReadLine());
-            return number;
+            int result = 0;
+            while (!int.TryParse(Console.ReadLine(), out result))
+            {
+                Console.WriteLine("Wrong input");
+            }
+            return result;
         }
     }
 }
