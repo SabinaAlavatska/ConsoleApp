@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="HometaskOneOptional\HometaskOneOptional.cs" />
     <Compile Include="HometaskOneOptional\PageObject\StartPage.cs" />
+    <Compile Include="HometaskThree\Extention.cs" />
     <Compile Include="HometaskThree\HometaskThreeGenerics.cs" />
     <Compile Include="HometaskTwo\GuessNumberGame.cs" />
     <Compile Include="Program.cs" />

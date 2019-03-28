@@ -31,20 +31,11 @@ namespace ConsoleApp1.HometaskThree
             }
             return result;
         }
-
-        public void DisplayInput()
+        public void UseExtMethods ()
         {
-            Console.WriteLine("Your list is :");
-            foreach (var item in intList)
-                Console.Write(item + " ");
-                Console.ReadLine();
-
-            Console.WriteLine("Your list sorted descending is :");
-            intList.Sort();
-            intList.Reverse();
-            foreach (var element in intList)
-                Console.Write(element + " ");
-                Console.ReadLine();
+            intList.OutputList();
+            intList.SortDescending();
+            intList.RemoveAllElementsExceptFirstAndLastOne();
         }
     }
 }
