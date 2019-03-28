@@ -17,10 +17,6 @@ namespace ConsoleApp1
            for (int i = 0; i < array.Length; i++)
             {
                 array[i] = GetUserNumber();
-            }
-            
-           for (int i = 0; i < array.Length; i++)
-            {
                 Console.WriteLine(array[i] *= 10);
             }
         }
