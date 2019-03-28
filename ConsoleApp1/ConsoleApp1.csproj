@@ -57,6 +57,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HometaskFour\Animal.cs" />
+    <Compile Include="HometaskFour\IBaseAnimal.cs" />
+    <Compile Include="HometaskFour\Cat.cs" />
+    <Compile Include="HometaskFour\Dog.cs" />
+    <Compile Include="HometaskFour\Duck.cs" />
+    <Compile Include="HometaskFour\Strauss.cs" />
     <Compile Include="HometaskOneOptional\HometaskOneOptional.cs" />
     <Compile Include="HometaskOneOptional\PageObject\StartPage.cs" />
     <Compile Include="HometaskThree\HometaskThreeGenerics.cs" />
