@@ -1,3 +1,5 @@
+﻿using ConsoleApp1.HometaskFour;
+using OpenQA.Selenium.Chrome;
 using System;
 
 namespace ConsoleApp1
@@ -39,19 +41,22 @@ namespace ConsoleApp1
             return result;
         }
 
-        public static void Main(string args)
+        public static void Main(string [] args)
         {
-            Program program = new Program();
-            program.GetArray();
-
-            GuessNumberGame guessNumberGame = new GuessNumberGame();
-            guessNumberGame.GuessNumber();
-
-            HometaskOneOptional oneOptional = new HometaskOneOptional();
-            StartPage startPage = new StartPage();
+            Dog dog = new Dog(1.5, 2);
+            dog.Eat();
+            dog.Bark();
+            Cat cat = new Cat(1.1, 5);
+            cat.Eat();
+            cat.Meow();
+            Strauss strauss = new Strauss(5.5, 3);
+            strauss.Eat();
+            Duck duck = new Duck(2.5, 6);
+            duck.Eat();
+            duck.Fly();
+            Console.ReadLine();
 
         }
     }
 }
-
 
