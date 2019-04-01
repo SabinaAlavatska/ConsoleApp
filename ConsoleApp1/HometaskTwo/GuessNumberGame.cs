@@ -1,3 +1,5 @@
+﻿using ConsoleApp1.HometaskThree;
+using OpenQA.Selenium.Chrome;
 using System;
 
 namespace ConsoleApp1
@@ -39,19 +41,12 @@ namespace ConsoleApp1
             return result;
         }
 
-        public static void Main(string args)
+        public static void Main(string [] args)
         {
-            Program program = new Program();
-            program.GetArray();
-
-            GuessNumberGame guessNumberGame = new GuessNumberGame();
-            guessNumberGame.GuessNumber();
-
-            HometaskOneOptional oneOptional = new HometaskOneOptional();
-            StartPage startPage = new StartPage();
-
+            HometaskThreeGenerics hometaskThree = new HometaskThreeGenerics();
+            hometaskThree.GetInputList();
+            hometaskThree.UseExtMethods();
         }
     }
 }
-
 
