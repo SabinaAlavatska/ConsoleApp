@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.HometaskFour
 {
-    abstract class Animal
+    abstract class Animal : IBaseAnimal
     {
         private double weight;
         private int age;
@@ -27,6 +27,11 @@ namespace ConsoleApp1.HometaskFour
         {
             this.weight = weight;
             this.age = age;
+        }
+
+        public void Eat()
+        {
+            Console.WriteLine ("I can eat");
         }
     }
 }

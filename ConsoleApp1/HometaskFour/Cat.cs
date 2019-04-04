@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.HometaskFour
 {
-    class Cat : Animal, IBaseAnimal
+    class Cat : Animal
     {
         public void Meow()
         {
             Console.WriteLine("I can meow");
-        }
-
-        public void Eat()
-        {
-            Console.WriteLine("I can eat");
         }
 
         public Cat(double weight, int age): base(weight, age) { }

@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.HometaskFour
 {
-    class Strauss : Animal, IBaseAnimal
+    class Strauss : Animal
     {
-        public void Eat()
-        {
-            Console.WriteLine("I can eat");
-        }
-
+       
         public Strauss (double weight, int age) : base(weight, age) { }
 
     }
