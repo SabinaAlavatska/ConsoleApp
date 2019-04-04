@@ -15,14 +15,13 @@ namespace ConsoleApp1.HometaskThree
                 Console.Write(item + " ");
             Console.ReadLine();
         }
+
         public static void SortDescending(this List<int> list)
+
         {
-            Console.WriteLine("Your list descending is :");
             list.Sort();
             list.Reverse();
-            foreach (var element in list)
-                Console.Write(element + " ");
-            Console.ReadLine();
+            list.OutputList();
         }
         public static void RemoveAllElementsExceptFirstAndLastOne(this List<int> list)
         {
@@ -33,12 +32,9 @@ namespace ConsoleApp1.HometaskThree
                     list.Remove(list[1]);
                 }
                 while (list.Count != 2);
-         
-            foreach (int item in list)
-            {
-                Console.Write(item + " ");
-                Console.ReadLine();
-            }
+
+            list.OutputList();
+
         }
     }
 }

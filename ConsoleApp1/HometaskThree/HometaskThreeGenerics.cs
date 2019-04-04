@@ -31,6 +31,8 @@ namespace ConsoleApp1.HometaskThree
             }
             return result;
         }
+
+      
         public void UseExtMethods ()
         {
             intList.OutputList();
