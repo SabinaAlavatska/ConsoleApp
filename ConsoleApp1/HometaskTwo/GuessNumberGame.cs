@@ -1,6 +1,7 @@
 ﻿using ConsoleApp1.HometaskFour;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -55,6 +56,12 @@ namespace ConsoleApp1
             duck.Eat();
             duck.Fly();
             Console.ReadLine();
+
+            List<Animal> animalList = new List<Animal>();
+            animalList.Add(new Dog(1.5, 2));
+            animalList.Add(new Cat(1.1, 5));
+            animalList.Add(new Strauss(5.5, 3));
+            animalList.Add(new Duck(2.5, 6));
 
         }
     }
